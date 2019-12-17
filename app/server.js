@@ -15,6 +15,9 @@ app.use(express.json());
 
 // add our required files for URL routes
 
+require("../app/routing/htmlRoutes")(app)
+require("../app/routing/apiRoutes")
+
 
 
 
