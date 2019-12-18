@@ -7,7 +7,7 @@ module.exports = function (app) {
     // displays JSON object for list of friends 
     app.get("api/friends", function (err, res) {
 
-        res.json(friendsdata)
+        res.json(friendsData)
 
         console.log("we are working on it")
     })
