@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- require JQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
-    <title>Document</title>
+    <!-- link to js code file to extract user info -->
+    <!-- <script defer src="../routing/htmlRoutes.js"></script> -->
+    <!-- link to dummy file for practice -->
+    <script defer src="/dummy.js"></script>
+    <title>Survey</title>
 
 </head>
 
@@ -21,17 +25,33 @@
             <div class="container">
                 <h2 class="display-4 text-center">Tell us a little about you !</h2>
                 <p class="lead text-center">after completing this survey our super-super algoritm will find you a
-                    frind!
+                    friend!
                 </p>
             </div>
         </div>
+        <br>
 
+        <form>
+            <div class="profileInfo">
+                <label for="exampleInputEmail1">
+                    <h5>What's your name?</h5>
+                </label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="profileInfo">
+                <label for="exampleInputPassword1">
+                    <h5>Would you like to post a picture?</h5>
+                </label>
+                <input class="form-control" id="exampleInputPassword1">
+            </div>
+        </form>
+        <br>
         <div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">
                     <h5>How much trouble do you have making freinds in real life?</h5>
                 </label>
-                <select class="form-control" id="Q1">
+                <select class="form-control surveyScores" id="Q1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -39,7 +59,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How much do you like music?</h5>
                 </label>
@@ -51,7 +71,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How often do you go to the movies?</h5>
                 </label>
@@ -63,7 +83,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How much do you like outdoor activities?</h5>
                 </label>
@@ -75,7 +95,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How often do you pick up a new book?</h5>
                 </label>
@@ -87,7 +107,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How much do you like pizza?</h5>
                 </label>
@@ -99,7 +119,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How much do you like videogames?</h5>
                 </label>
@@ -111,7 +131,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>what's your favorite number from 1 to 5?</h5>
                 </label>
@@ -123,7 +143,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How invested are you still in this 9 questions in ? </h5>
                 </label>
@@ -135,7 +155,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group surveyScores">
                 <label for="exampleFormControlSelect1">
                     <h5>How much do you really wanna make a new friend?</h5>
                 </label>
@@ -148,7 +168,7 @@
                 </select>
             </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Submit!</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block submit">Submit!</button>
         <br>
     </div>
 

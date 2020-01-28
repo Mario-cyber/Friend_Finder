@@ -14,12 +14,12 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 // add our required files for URL routes
-
 require("../app/routing/htmlRoutes")(app)
 require("../app/routing/apiRoutes")(app)
 
 
-
+// Static directory
+app.use(express.static("public"));
 
 // add a listener to our server this "starts" the server
 
