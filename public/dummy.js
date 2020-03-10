@@ -16,8 +16,7 @@ $(document).ready(function () {
             }
         }).then(res => {
             console.log(res)
-            // friends.push(res)
-            console.log(friends)
+
             document.location = 'default.asp'
         });
     })
